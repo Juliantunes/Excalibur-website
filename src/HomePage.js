@@ -17,10 +17,13 @@ function HomePage() {
 
   return (
     <div className="home-page">
-      {/* Title */}
-      <div className="home-title">Excalibur Gallery</div>
+      {/* Left Side Decoration */}
+  <img src="/leftLine.png" alt="Left Line" className="side-line left-line" />
+    {/* Logo Header */}
+    <div className="header">
+      <img src="/header.png" alt="Excalibur Gallery" className="header-logo" />
       <div className="header-line"></div>
-
+    </div>
       {/* Navigation */}
       <nav className="navbar">
         <a href="/home">Home</a>
@@ -44,6 +47,7 @@ function HomePage() {
         </Slider>
       </div>
 
+      <img src="/rightLine.png" alt="Right Line" className="side-line right-line" />
       {/* Footer */}
       <footer className="home-footer">
         &copy; 2024 Excalibur Gallery. All Rights Reserved.
