@@ -1,117 +1,24 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
-    overflow-x: hidden; /* Prevent horizontal scroll */
-  }
-  
-  .home-page {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: space-between;
-    text-align: center;
-  }
-  
-  /* Header Title */
-  .home-title {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-top: 100px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom:-90px;
-  }
-  
-  /* Top Line */
-  .header-line {
-    width: 100%; 
-    height: 10px;
-    background-color: #444;
-    margin: 20px auto; /* Remove negative margin */
-    justify-content: center;
-
-    
-  }
-  
-  .header-logo {
-    max-width: 9000px; /* Smaller max-width */
-    height: 1500px; /* Maintain aspect ratio */
-    margin: 20px auto; /* Space around it */
-  }
-  /* Side Decorations */
-
-.side-line {
-  position: absolute;
-  top: 0; /* Align both to the top edge */
-  bottom: 0; /* Ensure full height */
-  height: 100vh; /* Full viewport height */
-  width: auto; /* Maintain the image's aspect ratio */
-  z-index: 0; /* Place behind other elements */
+/* Center the header */
+.header-container {
+  text-align:center; 
+  margin-top: auto; /* Adjust the margin as needed */
 }
 
-.left-line {
-  left: 0; /* Stick to the left edge */
-  margin-left : -200px;
-  margin-top : 120px;
+/* Style the title */
+.header-title {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff; /* White text */
+  text-transform: uppercase; /* Makes all text uppercase */
+  margin-bottom: 10px; /* Add spacing between title and line */
 }
 
-.right-line {
-  right: 0; /* Stick to the right edge */
-  margin-top: -45px;
-  margin-right: -200px;
+/* Add the line below the header */
+.header-line {
+  width: 100%; /* Line width */
+  height: 2px; /* Line thickness */
+  margin: 0 auto; /* Centers the line */
+  background-color: #fff; /* White line color */
+  opacity: 0.8; /* Slight transparency */
 }
-  
-  /* Navigation Links */
-  .navbar {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    margin: 20px 0; /* Add clean spacing */
-  }
-  
-  
-  .navbar a {
-    text-decoration: none;
-    color: white;
-    font-size:4rem;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar a:hover {
-    color: gray; /* Subtle hover effect */
-  }
-  
-  /* Slider Section */
-  .slider-container {
-    margin: 70px auto;
-    width: 80%;
-    max-width: 1000px;
-    border-top: 2px solid #444; /* Top line above slider */
-    border-bottom: 2px solid #444; /* Bottom line below slider */
-    padding: 20px 0;
-  }
-  
-  .slick-slide img {
-    width: 100%;
-    border: 3px solid white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
-  }
-  
-  /* Footer Section */
-  .home-footer {
-    padding: 10px;
-    border-top: 2px solid #444;
-    font-size:3rem;
-    color: #aaa;
-  }
-  

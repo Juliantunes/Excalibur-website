@@ -11,6 +11,12 @@ function EnterPage() {
 
   return (
     <div className="enter-page">
+      {/* Reference image in public folder */}
+      <img 
+        src="/header.png" 
+        alt="Centered Graphic" 
+        className="enter-image" 
+      />
       <div className="content">
         <button onClick={handleEnter} className="enter-button">ENTER</button>
       </div>
